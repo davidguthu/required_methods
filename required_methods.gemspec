@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{required_methods}
-  s.version = ""
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Evan Whalen"]
   s.date = %q{2011-12-18}
-  s.description = %q{TODO: longer description of your gem}
-  s.email = %q{evanwhalen@gmail.com}
+  s.description = %q{Define which class and instance methods are required to be defined in subclasses}
+  s.email = %q{evanwhalendev@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -24,7 +24,6 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "lib/required_methods.rb",
-    "required_methods.gemspec",
     "test/helper.rb",
     "test/test_required_methods.rb"
   ]
@@ -32,7 +31,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Define which class and instance methods are required to be defined in subclasses}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
