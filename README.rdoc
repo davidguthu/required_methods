@@ -1,6 +1,10 @@
 = required_methods
 
-Description goes here.
+class Vehicle
+  include RequiredMethods
+  required_class_methods :make, :model
+  required_instance_methods :year, :mileage
+end
 
 == Contributing to required_methods
  
