@@ -1,9 +1,7 @@
+require 'active_support/concern'
+
 module RequiredMethods
-  
-  def self.included(base)
-    base.extend ClassMethods
-    base.send(:include, InstanceMethods)
-  end
+  extend ActiveSupport::Concern
   
   class NoRequiredMethodError < NoMethodError
   end
