@@ -34,16 +34,14 @@ module RequiredMethods
     
   end
   
-  module InstanceMethods
     
-    def method_missing(method, *arguments, &block)
-      if self.class.requires_instance_method?(method)
-        raise NoRequiredMethodError.new("#{self.class.name} requires instance method #{method}")
-      else
-        super
-      end
+  def method_missing(method, *arguments, &block)
+    if self.class.requires_instance_method?(method)
+      raise NoRequiredMethodError.new("#{self.class.name} requires instance method #{method}")
+    else
+      super
     end
-    
   end
+    
   
 end
